@@ -1,6 +1,5 @@
 import 'styles/globals.css'
 import React from 'react'
-import App from 'next/app'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 
@@ -22,9 +21,5 @@ function RingB2CApp({ Component, pageProps }): JSX.Element {
     </IntlProvider>
   )
 }
-
-RingB2CApp.getInitialProps = async (appContext) => ({
-  ...(await App.getInitialProps(appContext)),
-})
 
 export default RingB2CApp
